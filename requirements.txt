@@ -1,0 +1,8 @@
+openai
+pandas
+numpy
+matplotlib
+mplfinance
+requests
+Pillow
+yfinance
