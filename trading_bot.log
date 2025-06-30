@@ -1,0 +1,83 @@
+2025-07-01 02:54:59,565 - INFO - main - Starting Multi-Stock Trading Bot...
+2025-07-01 02:54:59,565 - INFO - orchestrator - Initializing Central Orchestration Module...
+2025-07-01 02:54:59,566 - INFO - news_analyzer - FundamentalAnalyzer initialized (using mock data).
+2025-07-01 02:54:59,566 - INFO - risk_manager - RiskManager initialized.
+2025-07-01 02:54:59,566 - INFO - trade_executor - TradeExecutor initialized for SimulatedBroker.
+2025-07-01 02:54:59,566 - INFO - orchestrator - All agents initialized.
+2025-07-01 02:54:59,567 - INFO - orchestrator - ========== STARTING ANALYSIS CYCLE FOR: AAPL ==========
+2025-07-01 02:54:59,567 - INFO - chart_generator - Creating chart for AAPL (D resolution)...
+2025-07-01 02:54:59,567 - INFO - chart_generator - Fetching 200 data points for AAPL with D resolution from Yahoo Finance...
+2025-07-01 02:54:59,923 - INFO - chart_generator - Successfully fetched 200 data points for AAPL.
+2025-07-01 02:55:00,406 - INFO - chart_generator - Chart for AAPL saved successfully to AAPL_1D_chart.png
+2025-07-01 02:55:00,409 - INFO - chart_generator - Creating chart for AAPL (240 resolution)...
+2025-07-01 02:55:00,410 - INFO - chart_generator - Fetching 150 data points for AAPL with 240 resolution from Yahoo Finance...
+2025-07-01 02:55:00,410 - WARNING - chart_generator - yfinance does not support '4h' interval. Using '1h' as the closest alternative for AAPL.
+2025-07-01 02:55:00,636 - INFO - chart_generator - Successfully fetched 150 data points for AAPL.
+2025-07-01 02:55:00,957 - INFO - chart_generator - Chart for AAPL saved successfully to AAPL_4H_chart.png
+2025-07-01 02:55:00,957 - INFO - vlm_analyzer - Starting VLM analysis for chart: AAPL_1D_chart.png
+2025-07-01 02:55:07,026 - INFO - vlm_analyzer - VLM analysis received and parsed successfully.
+2025-07-01 02:55:07,029 - INFO - vlm_analyzer - Starting VLM analysis for chart: AAPL_4H_chart.png
+2025-07-01 02:55:14,306 - INFO - vlm_analyzer - VLM analysis received and parsed successfully.
+2025-07-01 02:55:14,307 - INFO - news_analyzer - Fetching fundamental analysis...
+2025-07-01 02:55:14,308 - INFO - orchestrator - [AAPL] Daily Bias: 'neutral'. 4H Signal: 'neutral to bullish'.
+2025-07-01 02:55:14,308 - INFO - orchestrator - [AAPL] FINAL DECISION: HOLD. REASON: No clear alignment between Daily bias and 4H entry signal.
+2025-07-01 02:55:14,308 - INFO - orchestrator - ========== ANALYSIS CYCLE FOR AAPL COMPLETE ==========
+
+2025-07-01 02:55:14,308 - INFO - orchestrator - ========== STARTING ANALYSIS CYCLE FOR: NVDA ==========
+2025-07-01 02:55:14,308 - INFO - chart_generator - Creating chart for NVDA (D resolution)...
+2025-07-01 02:55:14,308 - INFO - chart_generator - Fetching 200 data points for NVDA with D resolution from Yahoo Finance...
+2025-07-01 02:55:14,408 - INFO - chart_generator - Successfully fetched 200 data points for NVDA.
+2025-07-01 02:55:14,739 - INFO - chart_generator - Chart for NVDA saved successfully to NVDA_1D_chart.png
+2025-07-01 02:55:14,739 - INFO - chart_generator - Creating chart for NVDA (240 resolution)...
+2025-07-01 02:55:14,739 - INFO - chart_generator - Fetching 150 data points for NVDA with 240 resolution from Yahoo Finance...
+2025-07-01 02:55:14,740 - WARNING - chart_generator - yfinance does not support '4h' interval. Using '1h' as the closest alternative for NVDA.
+2025-07-01 02:55:16,691 - INFO - chart_generator - Successfully fetched 150 data points for NVDA.
+2025-07-01 02:55:17,036 - INFO - chart_generator - Chart for NVDA saved successfully to NVDA_4H_chart.png
+2025-07-01 02:55:17,036 - INFO - vlm_analyzer - Starting VLM analysis for chart: NVDA_1D_chart.png
+2025-07-01 02:55:21,285 - INFO - vlm_analyzer - VLM analysis received and parsed successfully.
+2025-07-01 02:55:21,287 - INFO - vlm_analyzer - Starting VLM analysis for chart: NVDA_4H_chart.png
+2025-07-01 02:55:27,315 - INFO - vlm_analyzer - VLM analysis received and parsed successfully.
+2025-07-01 02:55:27,316 - INFO - news_analyzer - Fetching fundamental analysis...
+2025-07-01 02:55:27,316 - INFO - orchestrator - [NVDA] Daily Bias: 'neutral'. 4H Signal: 'bullish'.
+2025-07-01 02:55:27,317 - INFO - orchestrator - [NVDA] FINAL DECISION: HOLD. REASON: No clear alignment between Daily bias and 4H entry signal.
+2025-07-01 02:55:27,317 - INFO - orchestrator - ========== ANALYSIS CYCLE FOR NVDA COMPLETE ==========
+
+2025-07-01 02:55:27,318 - INFO - orchestrator - ========== STARTING ANALYSIS CYCLE FOR: MSFT ==========
+2025-07-01 02:55:27,318 - INFO - chart_generator - Creating chart for MSFT (D resolution)...
+2025-07-01 02:55:27,318 - INFO - chart_generator - Fetching 200 data points for MSFT with D resolution from Yahoo Finance...
+2025-07-01 02:55:27,396 - INFO - chart_generator - Successfully fetched 200 data points for MSFT.
+2025-07-01 02:55:27,657 - INFO - chart_generator - Chart for MSFT saved successfully to MSFT_1D_chart.png
+2025-07-01 02:55:27,657 - INFO - chart_generator - Creating chart for MSFT (240 resolution)...
+2025-07-01 02:55:27,658 - INFO - chart_generator - Fetching 150 data points for MSFT with 240 resolution from Yahoo Finance...
+2025-07-01 02:55:27,658 - WARNING - chart_generator - yfinance does not support '4h' interval. Using '1h' as the closest alternative for MSFT.
+2025-07-01 02:55:27,900 - INFO - chart_generator - Successfully fetched 150 data points for MSFT.
+2025-07-01 02:55:28,203 - INFO - chart_generator - Chart for MSFT saved successfully to MSFT_4H_chart.png
+2025-07-01 02:55:28,204 - INFO - vlm_analyzer - Starting VLM analysis for chart: MSFT_1D_chart.png
+2025-07-01 02:55:32,865 - INFO - vlm_analyzer - VLM analysis received and parsed successfully.
+2025-07-01 02:55:32,868 - INFO - vlm_analyzer - Starting VLM analysis for chart: MSFT_4H_chart.png
+2025-07-01 02:55:41,701 - INFO - vlm_analyzer - VLM analysis received and parsed successfully.
+2025-07-01 02:55:41,703 - INFO - news_analyzer - Fetching fundamental analysis...
+2025-07-01 02:55:41,703 - INFO - orchestrator - [MSFT] Daily Bias: 'neutral'. 4H Signal: 'bullish with cautious overbought conditions'.
+2025-07-01 02:55:41,703 - INFO - orchestrator - [MSFT] FINAL DECISION: HOLD. REASON: No clear alignment between Daily bias and 4H entry signal.
+2025-07-01 02:55:41,704 - INFO - orchestrator - ========== ANALYSIS CYCLE FOR MSFT COMPLETE ==========
+
+2025-07-01 02:55:41,704 - INFO - orchestrator - ========== STARTING ANALYSIS CYCLE FOR: GOOGL ==========
+2025-07-01 02:55:41,704 - INFO - chart_generator - Creating chart for GOOGL (D resolution)...
+2025-07-01 02:55:41,705 - INFO - chart_generator - Fetching 200 data points for GOOGL with D resolution from Yahoo Finance...
+2025-07-01 02:55:41,777 - INFO - chart_generator - Successfully fetched 200 data points for GOOGL.
+2025-07-01 02:55:42,304 - INFO - chart_generator - Chart for GOOGL saved successfully to GOOGL_1D_chart.png
+2025-07-01 02:55:42,305 - INFO - chart_generator - Creating chart for GOOGL (240 resolution)...
+2025-07-01 02:55:42,305 - INFO - chart_generator - Fetching 150 data points for GOOGL with 240 resolution from Yahoo Finance...
+2025-07-01 02:55:42,305 - WARNING - chart_generator - yfinance does not support '4h' interval. Using '1h' as the closest alternative for GOOGL.
+2025-07-01 02:55:42,539 - INFO - chart_generator - Successfully fetched 150 data points for GOOGL.
+2025-07-01 02:55:43,007 - INFO - chart_generator - Chart for GOOGL saved successfully to GOOGL_4H_chart.png
+2025-07-01 02:55:43,008 - INFO - vlm_analyzer - Starting VLM analysis for chart: GOOGL_1D_chart.png
+2025-07-01 02:55:48,274 - INFO - vlm_analyzer - VLM analysis received and parsed successfully.
+2025-07-01 02:55:48,276 - INFO - vlm_analyzer - Starting VLM analysis for chart: GOOGL_4H_chart.png
+2025-07-01 02:55:54,567 - INFO - vlm_analyzer - VLM analysis received and parsed successfully.
+2025-07-01 02:55:54,569 - INFO - news_analyzer - Fetching fundamental analysis...
+2025-07-01 02:55:54,570 - INFO - orchestrator - [GOOGL] Daily Bias: 'neutral'. 4H Signal: 'cautiously bullish'.
+2025-07-01 02:55:54,570 - INFO - orchestrator - [GOOGL] FINAL DECISION: HOLD. REASON: No clear alignment between Daily bias and 4H entry signal.
+2025-07-01 02:55:54,571 - INFO - orchestrator - ========== ANALYSIS CYCLE FOR GOOGL COMPLETE ==========
+
+2025-07-01 02:55:54,572 - INFO - main - Multi-Stock Trading Bot run finished for all symbols.
